@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="glide_custom_view_target_tag" type="id" />
+    <declare-styleable name="round_imageview">
+        <attr name="border_color" format="color" />
+        <attr name="border_width" format="dimension" />
+        <attr name="circle" format="boolean" />
+    </declare-styleable>
+</resources>

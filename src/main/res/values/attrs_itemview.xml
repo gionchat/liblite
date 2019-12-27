@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="itemview_icon" format="reference" />
+    <attr name="itemview_title" format="string" />
+    <attr name="itemview_summary" format="reference" />
+    <attr name="itemview_isswitch" format="boolean" />
+    <attr name="itemview_type" format="enum">
+        <enum name="single" value="0" />
+        <enum name="top" value="1" />
+        <enum name="middle" value="2" />
+        <enum name="bottom" value="3" />
+    </attr>
+
+    <declare-styleable name="itemview">
+        <attr name="itemview_icon" />
+        <attr name="itemview_title" />
+        <attr name="itemview_summary" />
+        <attr name="itemview_center" />
+        <attr name="itemview_isswitch" />
+        <attr name="itemview_type" />
+    </declare-styleable>
+
+
+</resources>
