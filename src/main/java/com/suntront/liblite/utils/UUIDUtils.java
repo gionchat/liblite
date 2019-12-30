@@ -1,5 +1,7 @@
 package com.suntront.liblite.utils;
 
+import java.util.UUID;
+
 /**
  * Copyright (C), 2015-2019, suntront
  * FileName: UUIDUtils
@@ -9,9 +11,10 @@ package com.suntront.liblite.utils;
  */
 public class UUIDUtils {
 
-    public static final String UUID = "c8bb2f7e-f98a-4b1f-afd2-2c852ce25d65";
+    public static final String UUID_FINAL = "84F0D958-B058-4483-9204-EE1631EF9A9E";
 
     public static void main(String[] args) throws Exception {
-        System.out.println("UUID:" + java.util.UUID.randomUUID());
+        System.out.println("UUID:" + UUID.randomUUID().toString().toUpperCase());
     }
+
 }

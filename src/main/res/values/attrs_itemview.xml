@@ -20,6 +20,4 @@
         <attr name="itemview_isswitch" />
         <attr name="itemview_type" />
     </declare-styleable>
-
-
 </resources>

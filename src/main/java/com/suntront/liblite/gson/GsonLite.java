@@ -45,8 +45,8 @@ import java.util.List;
 import java.util.Map;
 
 public class GsonLite {
-    private static final GsonBuilder DESERIALIZER_BUILDER = new GsonBuilder();
-    private static final GsonBuilder SERIALIZER_BUILDER = new GsonBuilder();
+    private static final GsonBuilder DESERIALIZER_BUILDER = new GsonBuilder().disableHtmlEscaping();
+    private static final GsonBuilder SERIALIZER_BUILDER   = new GsonBuilder().disableHtmlEscaping();
     private static Gson deserializer;
     private static Gson serializer;
 

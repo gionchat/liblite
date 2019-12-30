@@ -24,7 +24,7 @@ import java.security.spec.X509EncodedKeySpec;
  */
 public class SHAwithRSA {
 
-    public static final String TAG = "SHA1withRSA";
+    public static final String TAG = "SHAwithRSA";
     public static final String SIGN_ALGORITHMS = "SHA1WithRSA";
     private final static String DEFAULT_CHARSET = "UTF-8";
 

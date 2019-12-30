@@ -125,7 +125,7 @@ public class TimeUtils {
     }
 
     public static void main(String[] args) throws Exception {
-        System.out.println("ISO8601Time:" + getISO8601Time());
+        System.out.println("ISO8601: " + getISO8601Time());
     }
 
 }

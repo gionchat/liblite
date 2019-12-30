@@ -167,7 +167,12 @@ public class HttpLite {
             @Override
             public void onSuccess(String result) {
                 Log.d(TAG, "jeek request post result: " + result);
-                onHandleSuccess(result);
+                if (dialogLite != null) {
+                    dialogLite.dismissLoadingDialog();
+                }
+                if (!response.onData(result)) {
+                    onHandleSuccess(result);
+                }
 
             }
 
@@ -221,8 +226,12 @@ public class HttpLite {
             @Override
             public void onSuccess(String result) {
                 Log.d(TAG, "jeek request get result: " + result);
-                onHandleSuccess(result);
-
+                if (dialogLite != null) {
+                    dialogLite.dismissLoadingDialog();
+                }
+                if (!response.onData(result)) {
+                    onHandleSuccess(result);
+                }
             }
 
             @Override

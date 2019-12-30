@@ -59,8 +59,9 @@ public abstract class Response<RESULT> {
 
     public abstract void onSuccess(RESULT result);
 
-    public void onData(String data) {
+    public boolean onData(String data) {
         Log.i(TAG, "jeek  framework onData: " + data);
+        return false;
     }
 
     public void onFinish() {
