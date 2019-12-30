@@ -5,7 +5,7 @@ ext {
     GITHUB_REPO_PATH = "F:\\github\\liblite"
     PUBLISH_GROUP_ID = 'com.suntront'
     PUBLISH_ARTIFACT_ID = 'liblite'
-    PUBLISH_VERSION = '1.0.1'
+    PUBLISH_VERSION = '1.0.0'
 }
 uploadArchives {
     repositories.mavenDeployer {
@@ -19,14 +19,6 @@ uploadArchives {
     }
 }
 
-task androidSourcesJar(type: Jar) {
-    classifier = 'sources'
-    from android.sourceSets.main.java.sourceFiles
-}
-artifacts {
-    archives androidSourcesJar
-}
-
 android {
     compileSdkVersion 28
 
@@ -34,8 +26,8 @@ android {
 
     defaultConfig {
         minSdkVersion 21
-        versionCode 101
-        versionName "1.0.1"
+        versionCode 100
+        versionName "1.0.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
     }

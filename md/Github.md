@@ -73,3 +73,8 @@ project build.gradle加入
 ```
  maven { url "https://raw.githubusercontent.com/gionchat/liblite/master" }
 ```
+
+# 5、.gradle 路径
+```
+C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.suntront\liblite\1.0.0
+```
