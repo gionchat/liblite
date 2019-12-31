@@ -34,4 +34,15 @@ public class InputUtils {
         InputMethodManager imm = (InputMethodManager) context.getSystemService(Context.INPUT_METHOD_SERVICE);
         return imm.isActive();//isOpen若返回true，则表示输入法打开
     }
+
+    /**
+     * 强制隐藏输入法键盘
+     *
+     * @param context Context
+     * @param view    EditText
+     */
+    public static void hideInput(Context context, View view) {
+        InputMethodManager inputMethodManager = (InputMethodManager) context.getSystemService(Context.INPUT_METHOD_SERVICE);
+        inputMethodManager.hideSoftInputFromWindow(view.getWindowToken(), 0);
+    }
 }
