@@ -78,3 +78,10 @@ project build.gradle加入
 ```
 C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.suntront\liblite\1.0.0
 ```
+
+# 6、调试liblite
+```
+    implementation project(':liblite')
+    
+    , ':liblite'
+```
